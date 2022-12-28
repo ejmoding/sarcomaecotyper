@@ -9,11 +9,15 @@ git clone https://github.com/digitalcytometry/ecotyper
 cd ecotyper
 ```
 
-Next, download the soft tissue sarcoma cell type and ecotype discovery files into the "EcoTyper" folder within the "ecotyper" directory:
+Next, download the "SoftTissueSarcoma" folder from this repository into the "EcoTyper" folder within the "ecotyper" directory:
 
 ```
 cd EcoTyper
-git clone https://github.com/ejmoding/sarcomaecotyper
+git init
+git remote add -f origin https://github.com/ejmoding/sarcomaecotyper
+git config core.sparseCheckout true
+echo 'SoftTissueSarcoma' >> .git/info/sparse-checkout
+git pull origin master
 cd ..
 ```
 
