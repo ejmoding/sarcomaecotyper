@@ -1,0 +1,36 @@
+default :
+  Input :    
+    Discovery dataset name : "SoftTissueSarcoma"
+    Expression matrix : "datasets/discovery/SoftTissueSarcoma/data.txt"
+    #Possible values: "RNA-seq", "Affymetrix", "Other"
+    Expression type : "RNA-seq" 
+    #Possible values: "Carcinoma_Fractions", "Lymphoma_Fractions" or a path to a file containing the precomputed cell fractions
+    Cell type fractions : "Carcinoma_Fractions"
+    Annotation file : "datasets/discovery/SoftTissueSarcoma/annotation.txt"
+    Annotation file column to scale by : "histological_type"
+    Annotation file column(s) to plot : ["histological_type"]
+    CIBERSORTx username : ""
+    CIBERSORTx token : ""
+    
+  Output :
+    Output folder : "SoftTissueSarcoma"
+
+  Pipeline settings :
+    #Pipeline steps:
+    #   step 1 (cell type fraction estimation)
+    #   step 2 (cell type expression purification)
+    #   step 3 (cell state discovery)
+    #   step 4 (choosing the number of cell states)
+    #   step 5 (extracting cell state information)
+    #   step 6 (cell state QC filter)
+    #   step 7 (advanced cell state QC filter)
+    #   step 8 (ecotype discovery)
+    Pipeline steps to skip : [7,] 
+    Number of threads : 10    
+    Number of NMF restarts : 5
+    Maximum number of states per cell type : 20
+    Cophenetic coefficient cutoff : 0.95
+    
+
+
+

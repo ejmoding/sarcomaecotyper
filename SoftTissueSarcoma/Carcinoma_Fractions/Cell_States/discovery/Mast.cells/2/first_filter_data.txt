@@ -1,0 +1,3 @@
+"State"	"NumberMarkers"	"PosRatio"
+"IS01"	73	3.65906534579645
+"IS02"	6	0.354125834125358

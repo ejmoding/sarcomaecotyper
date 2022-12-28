@@ -1,0 +1,10 @@
+"CellType"	"Chosen_Rank"
+"Epithelial.cells"	4
+"Fibroblasts"	5
+"Endothelial.cells"	3
+"B.cells"	3
+"CD8.T.cells"	3
+"Monocytes.and.Macrophages"	5
+"Dendritic.cells"	3
+"Mast.cells"	2
+"PMNs"	3
