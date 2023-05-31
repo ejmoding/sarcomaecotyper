@@ -5,7 +5,7 @@ default :
     #Possible values: "RNA-seq", "Affymetrix", "Other"
     Expression type : "RNA-seq" 
     #Possible values: "Carcinoma_Fractions", "Lymphoma_Fractions" or a path to a file containing the precomputed cell fractions
-    Cell type fractions : "Carcinoma_Fractions"
+    Cell type fractions : "Custom"
     Annotation file : "datasets/discovery/SoftTissueSarcoma/annotation.txt"
     Annotation file column to scale by : "histological_type"
     Annotation file column(s) to plot : ["histological_type"]
