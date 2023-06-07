@@ -27,9 +27,9 @@ default :
     #   step 8 (ecotype discovery)
     Pipeline steps to skip : [7,] 
     Number of threads : 10    
-    Number of NMF restarts : 5
+    Number of NMF restarts : 30
     Maximum number of states per cell type : 20
-    Cophenetic coefficient cutoff : 0.95
+    Cophenetic coefficient cutoff : 0.98
     
 
 
